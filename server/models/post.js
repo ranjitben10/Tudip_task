@@ -1,0 +1,39 @@
+const mongoose = require('mongoose')
+const studentSchema = new mongoose.Schema({
+    name:{
+        type:String,
+        required:true
+    },
+    email:{
+        type:String,
+        required:true
+    },
+    phoneNumber:{
+        type:Number,
+        required:true
+    },
+    address:{
+        city:{
+            type:String,
+            required:true
+        },
+        state:{
+            type:String,
+            required:true
+        },
+        pincode:{
+            type:Number,
+            required:true
+        },
+        area:{
+            type:String,
+            required:true
+        },
+        country:{
+            type:String,
+            default:"India"
+        }
+    }
+})
+
+mongoose.model("Student",studentSchema)

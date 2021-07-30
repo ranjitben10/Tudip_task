@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Hahmlet', serif;
+}
+/* .search-field {
+  margin-right: 10px;
+} */
+
+.homecard {
+  /* max-width: 600px; */
+  display: flex;
+  flex-wrap: wrap;
+  height: max-content;
+  justify-content: space-evenly;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  background: burlywood;
+  padding: 12px;
+  margin: 2rem 30px;
+}
+
+.left-div{
+  overflow-wrap: anywhere;
+    padding: 4px;
+}
+.right-div{
+  padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.right-para.p{
+  overflow-y: scroll;
+}
+.btn-div{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-div button{
+  margin-top: 2rem;
+    padding: 10px;
+    border-radius: 4px;
+    width: 70px;
+}
